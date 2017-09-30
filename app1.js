@@ -403,7 +403,7 @@ var controller = (function(budgetCtrl, UICtrl) {
         var input, newItem;
 
         // 1. Get the field input data
-        var input = UICtrl.getInput();        
+        var input = UICtrl.getInput();
 
         if (input.description !== "" && !isNaN(input.value) && input.value > 0) {
             // 2. Add the item to the budget controller
@@ -427,7 +427,7 @@ var controller = (function(budgetCtrl, UICtrl) {
     var ctrlDeleteItem = function(event) {
         var itemID, splitID, type, ID;
 
-        itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
+        itemID = event.target.parentNode.parentNode.parentNode.parentNode;
 
         if (itemID) {
 
